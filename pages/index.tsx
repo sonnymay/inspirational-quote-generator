@@ -192,7 +192,7 @@ export default function Home() {
           <>
             Quotes Generated: {numberOfQuotes}
             <br />
-            Developed with <RedSpan>♥</RedSpan> by <FooterLink href="https://youtube.com/brianhhough" target="_blank" rel="noopener noreferrer"> @BrianHHough </FooterLink>
+            Developed with <RedSpan>♥</RedSpan> by <FooterLink href="https://www.sonny-may.com" target="_blank" rel="noopener noreferrer"> Sonny </FooterLink>
           </>
         </FooterCon>
 
