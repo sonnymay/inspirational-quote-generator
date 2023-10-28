@@ -5,12 +5,14 @@ import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
 // Components
-import { BackgroundImage1, BackgroundImage2, FooterCon, FooterLink, GenerateQuoteButton, GenerateQuoteButtonText, GradientBackgroundCon, QuoteGeneratorCon, QuoteGeneratorInnerCon, QuoteGeneratorSubTitle, QuoteGeneratorTitle, RedSpan } from '@/components/QuoteGenerator/QuoteGeneratorElements'
+import { BackgroundImage1, BackgroundImage2, BackgroundImage3, BackgroundImage4, FooterCon, FooterLink, GenerateQuoteButton, GenerateQuoteButtonText, GradientBackgroundCon, QuoteGeneratorCon, QuoteGeneratorInnerCon, QuoteGeneratorSubTitle, QuoteGeneratorTitle, RedSpan } from '@/components/QuoteGenerator/QuoteGeneratorElements'
 import QuoteGeneratorModal from '@/components/QuoteGenerator'
 
 // Assets
-import Clouds1 from '../assets/cloud-and-thunder.png'
-import Clouds2 from '../assets/cloudy-weather.png'
+import Clouds1 from '../assets/pikachu1.png'
+import Clouds2 from '../assets/Bulbasaur.png'
+import Clouds3 from '../assets/Charmander.png'
+import Clouds4 from '../assets/Squirtle.png'
 import { API } from 'aws-amplify'
 import { generateAQuote, quotesQueryName } from '@/src/graphql/queries'
 import { GraphQLResult } from '@aws-amplify/api-graphql'
@@ -163,12 +165,12 @@ export default function Home() {
             </QuoteGeneratorTitle>
 
             <QuoteGeneratorSubTitle>
-              Looking for a splash of inspiration? Generate a quote card with a random inspirational quote provided by <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes API</FooterLink>.
+                Get an inspirational quote card with a random quote provided by <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes API</FooterLink>.
             </QuoteGeneratorSubTitle>
 
             <GenerateQuoteButton onClick={handleOpenGenerator}>
               <GenerateQuoteButtonText>
-                Make a Quote
+                Create a Quote
               </GenerateQuoteButtonText>
             </GenerateQuoteButton>
           </QuoteGeneratorInnerCon>
@@ -181,10 +183,22 @@ export default function Home() {
           alt="cloudybackground1"
         />
 
-        <BackgroundImage2 
+        <BackgroundImage2
           src={Clouds2}
+          height="280"
+          alt="cloudybackground1"
+        />
+
+        <BackgroundImage3 
+          src={Clouds3}
           height="300"
           alt="cloudybackground1"
+        />
+
+        <BackgroundImage4 
+          src={Clouds4}
+          height="280"
+          alt="Squirtle"
         />
 
         {/* Footer */}

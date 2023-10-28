@@ -29,8 +29,8 @@ const QuoteGeneratorModal = ({
     setQuoteReceived,
 }: QuoteGeneratorModalProps) => {
 
-    const wiseDevQuote = '"If you can center a div, anything is possible."';
-    const wiseDevQuoteAuthor = "- a wise senior software engineer";
+    const wiseDevQuote = '"Do not give up. If you can learn to code, you can build the life you want."';
+    const wiseDevQuoteAuthor = "- A beginner software engineer working toward his goals";
 
     const [blobUrl, setBlobUrl] = useState<string | null>(null);
 

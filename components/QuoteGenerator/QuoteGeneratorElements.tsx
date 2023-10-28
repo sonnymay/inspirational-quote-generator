@@ -24,16 +24,30 @@ export const GradientBackgroundCon = styled.div`
 
 export const BackgroundImage1 = styled(Image)`
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-left: -10px;
   margin-top: -10px;
 `;
 
 export const BackgroundImage2 = styled(Image)`
   position: fixed;
-  z-index: 1;
-  right: -120px;
-  bottom: -10px;
+  z-index: 2;
+  right: 5px;
+`;
+
+export const BackgroundImage3 = styled(Image)`
+  position: fixed;
+  z-index: 2;
+  margin-left: -300px;
+  margin-top: 500px;
+  top: -30px;
+`;
+
+export const BackgroundImage4 = styled(Image)`
+  position: fixed;
+  z-index: 2;
+  right: -18px;
+  bottom: 1px;
 `;
 
 export const FooterCon = styled.div`
